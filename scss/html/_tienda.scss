@@ -1,0 +1,74 @@
+// imports
+
+@import "../utilidades/mixin";
+
+/* estilos de tienda */
+
+main{
+    .indumentaria-tienda{
+        @include indumentaria;
+    }
+}
+
+/* MQ de celular tienda */
+
+@media screen and (max-width:600px){
+    body{
+        main{
+            .indumentaria-tienda{
+                grid-template-columns: repeat(1, 100%);
+
+                .ropamujer4{
+                    display: none;
+                }
+
+                .ropamujer5{
+                    display: none;
+                }
+                .ropamujer6{
+                    display: none;
+                }
+
+                .ropahombre4{
+                    display: none;
+                }
+
+                .ropahombre5{
+                    display: none;
+                }
+                
+                .ropahombre6{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* MQ de tablet tienda */
+
+@media screen and (min-width:600px) and (max-width:1024px){
+    body{
+        main{
+            .indumentaria-tienda{
+                
+                grid-template-columns: repeat(2, 2fr);
+                grid-template-rows: repeat(2, 2fr);
+
+                .ropamujer3{
+                    display: none;
+                }
+                .ropamujer6{
+                    display: none;
+                }
+
+                .ropahombre3{
+                    display: none;
+                }
+                .ropahombre6{
+                    display: none;
+                }
+            }
+        }
+    }
+}

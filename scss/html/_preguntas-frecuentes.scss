@@ -1,0 +1,45 @@
+// imports
+
+@import "../utilidades/mixin";
+
+/* estilos preguntas frecuentes */
+
+main{
+    div{
+        ul{
+           @include preguntas-frecuentes;
+           
+           .preguntas{
+            font-size: 30px;
+           }
+
+           .respuestas{
+            font-size: 15px;
+           }
+        }
+    }
+}
+
+/* MQ de celular preguntas frecuentes*/
+
+@media screen and (max-width:600px){
+    main{
+        .preguntas-frecuentes{
+            .tutorial{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* MQ de tablet preguntas frecuentes */
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    main{
+        .preguntas-frecuentes{
+            .tutorial{
+                width: 100%;
+            }
+        }
+    }
+}

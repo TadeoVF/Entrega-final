@@ -1,0 +1,80 @@
+// imports
+
+@import "../utilidades/mixin";
+
+/* estilos del contacto */
+
+main{
+    .redes-sociales{
+        @include redes;
+    } 
+    form{
+        margin: 10px;
+        padding: 30px;
+        display: flex;
+        fieldset{
+            background-color: $color-formulario;
+            border-radius: 20px;
+            width: 100%;
+            .nya{
+                #nombre{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-bottom: 50px;
+                    margin-right: 50px;
+                    width: 30%;
+                    height: 30px;
+                }
+
+                #apellido{
+                    margin-bottom: 50px;
+                    margin-right: 35px;
+                    width: 30%;
+                    height: 30px;
+                }
+            }
+            .email{
+                #email{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-bottom: 50px;
+                    margin-right: 50px;
+                    width: 30%;
+                    height: 30px;
+                }
+            }
+            .texto{
+                #texto{
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-bottom: 50px;
+                    width: 80%;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}   
+
+/* estilos de celular contacto*/
+
+@media screen and (max-width:600px){
+    main{
+        .redes-sociales{
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            padding-top: 40px;
+        }
+    }
+}
+
+/* estilos de tablet contacto*/
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    main{
+        .redes-sociales{
+            row-gap: 1em;
+            column-gap: 5px;
+        }
+    }
+}

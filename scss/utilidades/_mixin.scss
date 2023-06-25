@@ -1,0 +1,70 @@
+//import
+@import "variables";
+
+@mixin header{
+    display: flex;
+    background-color: $color-principal;
+    align-items: center;
+    border: solid 2px;
+    justify-content: space-between;
+    padding-inline-start: 5px;
+    width: 100%;
+}
+
+@mixin navbar-li{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: solid 2px black;
+}
+
+@mixin titulos{
+    text-align: center;
+    border: solid 2px;
+    background-color: $color-principal;
+}
+
+@mixin indumentaria-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   justify-items: center;
+    padding: 20px;
+}
+
+@mixin footer{
+    background-color: $color-principal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: absolute;
+    border: solid 2px;
+    width: 100%;
+}
+
+@mixin redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 10rem;
+    padding: 10px;
+}
+
+@mixin indumentaria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 40px ;
+    padding: 20px;
+}
+
+@mixin preguntas-frecuentes{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    gap: 20px;
+}

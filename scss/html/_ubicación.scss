@@ -1,0 +1,51 @@
+// imports
+
+@import "../utilidades/extend";
+
+/* estilos de ubicaciones */ 
+
+main{
+    .ubicaciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 10px;
+
+            .ubicacion{
+                 @extend %ubicación;
+            }
+        }
+    }
+
+    /* MQ de celular ubicación */
+
+@media screen and (max-width:600px){
+    main{
+        .ubicaciones{
+            grid-template-columns: repeat(1, 100%);
+            .ubicacion-uno{
+                font-size: 10px;
+                .map1{
+                    width: 110%;
+                }
+            }
+
+            .ubicacion-dos{
+                font-size: 10px;
+                .map2{
+                    width: 110%;
+                }
+            }
+        }
+    }
+}
+
+/* MQ de tablet ubicación */
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    main{
+        .ubicaciones{
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+}

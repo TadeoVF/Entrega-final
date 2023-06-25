@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilos del contacto */
+main .redes-sociales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 10rem;
+  padding: 10px; }
+
+main form {
+  margin: 10px;
+  padding: 30px;
+  display: flex; }
+  main form fieldset {
+    background-color: rgba(247, 160, 160, 0.918);
+    border-radius: 20px;
+    width: 100%; }
+    main form fieldset .nya #nombre {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 50px;
+      margin-right: 50px;
+      width: 30%;
+      height: 30px; }
+    main form fieldset .nya #apellido {
+      margin-bottom: 50px;
+      margin-right: 35px;
+      width: 30%;
+      height: 30px; }
+    main form fieldset .email #email {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 50px;
+      margin-right: 50px;
+      width: 30%;
+      height: 30px; }
+    main form fieldset .texto #texto {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 50px;
+      width: 80%;
+      height: 80px; }
+
+/* estilos de celular contacto*/
+@media screen and (max-width: 600px) {
+  main .redes-sociales {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding-top: 40px; } }
+
+/* estilos de tablet contacto*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  main .redes-sociales {
+    row-gap: 1em;
+    column-gap: 5px; } }
+
+/* estilos preguntas frecuentes */
+main div ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  gap: 20px; }
+  main div ul .preguntas {
+    font-size: 30px; }
+  main div ul .respuestas {
+    font-size: 15px; }
+
+/* MQ de celular preguntas frecuentes*/
+@media screen and (max-width: 600px) {
+  main .preguntas-frecuentes .tutorial {
+    width: 100%; } }
+
+/* MQ de tablet preguntas frecuentes */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  main .preguntas-frecuentes .tutorial {
+    width: 100%; } }
+
+/* estilos de tienda */
+main .indumentaria-tienda {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+  padding: 20px; }
+
+/* MQ de celular tienda */
+@media screen and (max-width: 600px) {
+  body main .indumentaria-tienda {
+    grid-template-columns: repeat(1, 100%); }
+    body main .indumentaria-tienda .ropamujer4 {
+      display: none; }
+    body main .indumentaria-tienda .ropamujer5 {
+      display: none; }
+    body main .indumentaria-tienda .ropamujer6 {
+      display: none; }
+    body main .indumentaria-tienda .ropahombre4 {
+      display: none; }
+    body main .indumentaria-tienda .ropahombre5 {
+      display: none; }
+    body main .indumentaria-tienda .ropahombre6 {
+      display: none; } }
+
+/* MQ de tablet tienda */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  body main .indumentaria-tienda {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr); }
+    body main .indumentaria-tienda .ropamujer3 {
+      display: none; }
+    body main .indumentaria-tienda .ropamujer6 {
+      display: none; }
+    body main .indumentaria-tienda .ropahombre3 {
+      display: none; }
+    body main .indumentaria-tienda .ropahombre6 {
+      display: none; } }
+
+main .ubicaciones .ubicacion {
+  display: flex;
+  justify-content: center;
+  font-size: 3em; }
+
+/* estilos de ubicaciones */
+main .ubicaciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 10px; }
+
+/* MQ de celular ubicación */
+@media screen and (max-width: 600px) {
+  main .ubicaciones {
+    grid-template-columns: repeat(1, 100%); }
+    main .ubicaciones .ubicacion-uno {
+      font-size: 10px; }
+      main .ubicaciones .ubicacion-uno .map1 {
+        width: 110%; }
+    main .ubicaciones .ubicacion-dos {
+      font-size: 10px; }
+      main .ubicaciones .ubicacion-dos .map2 {
+        width: 110%; } }
+
+/* MQ de tablet ubicación */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  main .ubicaciones {
+    grid-template-columns: repeat(1, 100%); } }
+
+/* estilos body */
+body {
+  background-image: url(../img/fondo-celeste-png.avif);
+  /* estilos de header */
+  /*estilos de footer */ }
+  body header {
+    display: flex;
+    background-color: #f8e5bb;
+    align-items: center;
+    border: solid 2px;
+    justify-content: space-between;
+    padding-inline-start: 5px;
+    width: 100%; }
+    body header nav ul {
+      list-style: none;
+      display: flex; }
+      body header nav ul li {
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        border: solid 2px black; }
+        body header nav ul li a {
+          text-decoration: none; }
+  body footer {
+    background-color: #f8e5bb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: absolute;
+    border: solid 2px;
+    width: 100%; }
+    body footer .copyright {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: 5px; }
+    body footer .redes {
+      display: flex;
+      gap: 15px;
+      margin: 10px;
+      padding-right: 5px; }
+    body footer .flecha {
+      position: fixed;
+      bottom: 10px; }
+
+/* estilo titulos */
+.titulos {
+  text-align: center;
+  border: solid 2px;
+  background-color: #f8e5bb; }
+
+/* estilo index */
+.body-index .main-index .indumentaria-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px; }
+
+/* MQ de celular index*/
+@media screen and (max-width: 600px) {
+  .body-index .main-index .indumentaria-home {
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 3em; }
+    .body-index .main-index .indumentaria-home .ropa1 {
+      display: none; }
+    .body-index .main-index .indumentaria-home .ropa4 {
+      display: none; } }
+
+/* MQ de tablet index*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .body-index .main-index .indumentaria-home {
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 3em; }
+    .body-index .main-index .indumentaria-home .ropa1 {
+      display: none; }
+    .body-index .main-index .indumentaria-home .ropa4 {
+      display: none; } }
